@@ -1,0 +1,160 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+header {
+  width: 95%;
+  border: 1px solid black;
+  margin: 0 auto;
+  display: flex;
+  background-color: blue;
+}
+.conteneur {
+  width: 100%;
+  height: 15vh;
+  display: flex;
+}
+.droite {
+  width: 50%;
+  background-color: midnightblue;
+}
+.logo {
+  background-color: teal;
+  width: 50%;
+}
+
+nav {
+  width: 95%;
+  height: 10vh;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-around;
+  background-color: darkkhaki;
+  line-height: 10vh;
+  border: 1px solid black;
+}
+#container {
+  width: 90%;
+  margin: 0 auto;
+  border: 1px solid black;
+  display: flex;
+}
+.a1 {
+  background-color: darkgoldenrod;
+}
+.a2 {
+  background-color: darkgreen;
+}
+.a1,
+.a2 {
+  border: 1px solid black;
+  width: 50vw;
+  height: 50vh;
+}
+#sec2 {
+  width: 90%;
+  height: 40vh;
+  background-color: crimson;
+  margin: 0 auto;
+  border: 1px solid black;
+}
+section {
+  width: 90%;
+  border: 1px solid;
+}
+.container1 {
+  width: 100%;
+  height: 40vh;
+  display: flex;
+}
+.cont1,
+.cont2 {
+  display: flex;
+  width: 50%;
+}
+.txts2 {
+  text-align: center;
+  background-color: tomato;
+  margin: 0 auto;
+  width: 90%;
+  border: 1px solid;
+}
+.tx1 {
+  background-color: rgb(12, 19, 18);
+  width: 50%;
+  height: 100%;
+}
+.tx2 {
+  background-color: rgb(109, 12, 36);
+  width: 50%;
+  height: 100%;
+}
+.tx3 {
+  background-color: rgb(71, 28, 71);
+  width: 50%;
+  height: 100%;
+}
+.tx4 {
+  background-color: rgb(199, 115, 66);
+  width: 50%;
+  height: 100%;
+}
+footer {
+  width: 90%;
+  height: 200px;
+  margin: 0 auto;
+  display: flex;
+}
+.footd,
+.footg {
+  border: 1px solid black;
+  width: 50vw;
+  height: 20vh;
+}
+.footd {
+  background-color: fuchsia;
+}
+.footg {
+  background-color: mediumturquoise;
+}
+/************ responsiv baby **************/
+/* ranger mes div dans des container afin de rendre tout responsive  */
+@media screen and (max-width: 768px) {
+  header {
+    flex-direction: column;
+  }
+  .droite {
+    width: 100%;
+    height: 12vh;
+  }
+}
+@media screen and (max-width: 768px) {
+  nav {
+    display: none;
+  }
+}
+@media screen and (max-width: 768px) {
+  #container {
+    flex-direction: column;
+  }
+  .a1 {
+    width: 100%;
+  }
+  .a2 {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 768px) {
+  .container1 {
+    flex-direction: column;
+  }
+  .cont2 {
+    height: 100%;
+    width: 100%;
+  }
+  .cont1 {
+    height: 100%;
+    width: 100%;
+  }
+}
